@@ -1,5 +1,5 @@
 String.prototype.filterWords = function(arr){
-myStr = this;
-arr.map(val => myStr = myStr.replace(val,"***"));
-return myStr;
+myStr = this.split(' ');
+arr.map(val => myStr = myStr.map(item => item.replace(val,"***")));
+return myStr.join(" ");
 }
