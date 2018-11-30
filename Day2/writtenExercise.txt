@@ -1,0 +1,6 @@
+1. setTimeout schedules a callback to run after a given time while setImediate will schedule a callback to run at the check phase of the event loop.
+
+2. process.nextTick() will run right after the current operation ends. It is not part of the event loop.
+   setImediate - it is part of the event loop and run in the check pahase of the event loop.
+
+3. http, url, querystring, path, fs, util, v8, stream, buffer, domain.
