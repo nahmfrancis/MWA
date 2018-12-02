@@ -98,7 +98,7 @@ app.use(function(err, req, res, next) {
 });
 
 // bootup
-app.listen(1947, function(){
+app.listen(8000, function(){
 	console.log('server is running');
 });
 module.exports = app;
