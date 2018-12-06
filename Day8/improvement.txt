@@ -1,0 +1,6 @@
+simple Index
+    - author
+    - borrowHistory.student
+
+Multikey Index
+- keywords
