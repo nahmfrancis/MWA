@@ -11,7 +11,7 @@ export class DataService {
      return this.http.get('https://randomuser.me/api/?results=10');
   }
 
-  getOnlineData() : any{
+  getApiData() : any{
     
      this.getUserData().subscribe(
        resp => {
@@ -26,7 +26,7 @@ export class DataService {
 
   }
 
-  getCacheData() : any{
+  getSavedData() : any{
     let userData: string = window.localStorage.getItem('data');
     if(userData != null)
        return userData;
