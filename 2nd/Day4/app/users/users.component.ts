@@ -17,7 +17,7 @@ export class UsersComponent implements OnInit {
 
   constructor(data: DataService) {
    
-    let Data: string = data.getCacheData();   
+    let Data: string = data.getSavedData();   
     if(Data != null)
     {
       console.log(Data);
